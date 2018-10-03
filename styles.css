@@ -74,38 +74,15 @@ li label input{
 	height: 16px;
 	margin: 0 15px 0 15px;
 }
-input:checked + span{
+input:checked + span,
+input:checked + span + small{
 	text-decoration: line-through;	
 }
-#item1 span::after{
-	content: "( for the next lessons about CSS )";
-	font-size: 12px;
-	color: rgb(220,241,249);
-	margin: 10px;
+label small:before{
+	content: '( ';
 }
-#item2 span::after{
-	content: "( for more CSS manipulations )";
-	font-size: 12px;
-	color: rgb(220,241,249);
-	margin: 10px;
-}
-#item3 span::after{
-	content: "( because they are awesome )";
-	font-size: 12px;
-	color: rgb(220,241,249);
-	margin: 10px;
-}
-#item4 span::after{
-	content: "( hm... they always disappear )";
-	font-size: 12px;
-	color: rgb(220,241,249);
-	margin: 10px;
-}
-#item6 span::after{
-	content: "( for my friends )";
-	font-size: 12px;
-	color: rgb(220,241,249);
-	margin: 10px;
+label small:after{
+	content: ' )';
 }
 .final{
 	color: rgb(235,126,127);
